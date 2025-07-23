@@ -139,7 +139,6 @@ ng test
       "id": 1,
       "title": "Sample Card",
       "description": "This is a demo card description.",
-      "imageUrl": "https://example.com/image.png"
     }
   ]
 }
