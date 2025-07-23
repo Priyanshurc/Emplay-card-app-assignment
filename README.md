@@ -157,18 +157,6 @@ ng build
 - Output will be in the `dist/` directory
 - You can deploy it using Netlify, GitHub Pages, Firebase, Vercel, etc.
 
----
-
-## ✨ UI Screenshots (Optional)
-
-You can add screenshots to the `screenshots/` folder and reference them like this:
-
-```markdown
-![Homepage](screenshots/homepage.png)
-![Edit Modal](screenshots/edit-modal.png)
-```
-
----
 
 ## 🔖 License
 
