@@ -1,0 +1,104 @@
+.edit-dialog {
+  background-color: #f4f4f8;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 400px;
+  max-width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  color: #0b3142;
+  font-family: 'Segoe UI', sans-serif;
+}
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dialog-header h2 {
+  font-size: 1.9rem;
+  margin: 0;
+  font-weight: 600;
+  color: #0b3142;
+}
+
+.close-button {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  max-width:4vh;
+  max-height:5vh;
+}
+
+.close-button:hover {
+  background-color: #eee;
+  color: #d32f2f;
+}
+.edit-dialog h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #0b3142;
+  font-weight: 600;
+}
+
+.edit-dialog label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #333;
+}
+
+.edit-dialog input,
+.edit-dialog textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.edit-dialog textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 240px;
+}
+
+.word-count {
+  text-align: right;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.edit-dialog button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0b3142;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.edit-dialog button:hover {
+  background-color: #0f5257;
+}

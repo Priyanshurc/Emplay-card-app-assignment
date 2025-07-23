@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CardListComponent } from './components/card-list/card-list.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [CardListComponent],
+  template: '<app-card-list />'
 })
-export class AppComponent {
-  title = 'emplay-card-app';
-}
+export class AppComponent {}

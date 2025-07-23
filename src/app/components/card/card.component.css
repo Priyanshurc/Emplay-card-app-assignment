@@ -1,0 +1,65 @@
+:host {
+  display: block;
+  background-color: #d6d3f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #0b3142;
+}
+
+.mat-card.card {
+  width: 340px;
+  max-height: 480px;
+  overflow: hidden;
+  background-color: #0b3142;
+  color: #d6d3f0;
+  border-left: 6px solid #0f5257;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.mat-card.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0f5257;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.card-content {
+  margin-top: 0.5rem;
+  color: #0f5257;
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.card-content::-webkit-scrollbar {
+  display: none;
+}
+
+.card-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+button.mat-button {
+  background-color: #0f5257;
+  color: #0f5257;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.4rem 1.2rem;
+  transition: background-color 0.2s ease;
+}
+
+button.mat-button:hover {
+  background-color: #d6d3f0;
+}

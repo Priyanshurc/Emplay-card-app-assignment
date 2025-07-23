@@ -1,0 +1,15 @@
+<mat-card class="card">
+  <mat-card-title class="card-title">{{ card.title }}</mat-card-title>
+  <mat-card-content class="card-content">
+    <p>
+      {{ showMore ? card.description : (card.description | slice:0:50) + (card.description.length > 50 ? '...' : '') }}
+    </p>
+    <button *ngIf="card.description.length > 50" mat-button (click)="showMore = !showMore">
+      {{ showMore ? 'Show Less' : 'Show More' }}
+    </button>
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+    <button mat-button color="primary" (click)="onEdit()">Edit</button>
+    <button mat-button color="warn" (click)="onDelete()">Delete</button>
+  </mat-card-actions>
+</mat-card>

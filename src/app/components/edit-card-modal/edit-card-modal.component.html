@@ -1,0 +1,24 @@
+<div class="edit-dialog">
+  <div class="dialog-header">
+    <h2>Edit Card</h2>
+    <button class="close-button" (click)="dialogRef.close()">✖</button>
+  </div>
+
+  <label>Title</label>
+  <input [(ngModel)]="data.title" placeholder="Title" />
+
+  <label>Description (Max 500 words)</label>
+  <textarea
+    [(ngModel)]="data.description"
+    placeholder="Description"
+  ></textarea>
+
+  <div class="word-count">
+    {{ getWordCount() }} / 500 words
+    <div class="error" *ngIf="getWordCount() > 500">
+      Description must not exceed 500 words.
+    </div>
+  </div>
+
+  <button (click)="save()" [disabled]="getWordCount() > 500">Save</button>
+</div>
