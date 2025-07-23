@@ -1,59 +1,158 @@
-# EmplayCardApp
+```markdown
+# Emplay Card App 🎴
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+An Angular-based card editor and listing web application for the Emplay assignment. It allows users to view, edit, and save card data using a mock backend powered by `json-server`.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📁 Project Structure
+
+```
+
+emplay-card-app/
+├── backend/           # JSON Server mock backend
+│   └── db.json        # Mock database file
+├── src/               # Angular source code
+│   └── app/           # Core application logic
+├── package.json       # Project dependencies
+
+````
+
+---
+
+## ✅ Prerequisites
+
+- Node.js (v18+ recommended)
+- Angular CLI
+
+Install Angular CLI globally (if not already installed):
+
+```bash
+npm install -g @angular/cli
+````
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/emplay-card-app.git
+cd emplay-card-app
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Running the Application
+
+This project includes a **frontend** (Angular) and a **mock backend** (`json-server`).
+
+### ➤ Start Frontend
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* Runs at: `http://localhost:4200/`
+* Live reload enabled
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### ➤ Start Backend
 
 ```bash
-ng generate --help
+npm run start:backend
 ```
 
-## Building
+* Runs at: `http://localhost:3000/`
+* Reads/writes data from `backend/db.json`
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🧩 Features
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* View a list of cards with images and descriptions
+* Edit card data using a modal dialog
+* Save changes to a mock server
+* Form validation including:
 
-## Running unit tests
+  * Required fields
+  * Maximum 500 characters in the description
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
+
+## 📦 Available NPM Scripts
+
+| Command                 | Purpose                   |
+| ----------------------- | ------------------------- |
+| `ng serve`              | Run the Angular frontend  |
+| `npm run start:backend` | Start json-server backend |
+| `ng build`              | Create a production build |
+| `ng test`               | Run unit tests            |
+
+---
+
+## 🧪 Running Tests
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+> Optional: Set up e2e testing using Cypress or Protractor if needed.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
+## 🔧 Sample Data (`db.json`)
+
+```json
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Sample Card",
+      "description": "This is a demo card description.",
+      "imageUrl": "https://example.com/image.png"
+    }
+  ]
+}
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 🧰 Tools Used
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Angular 17+
+* TypeScript
+* json-server
+* HTML5 / CSS3
+
+---
+
+## 🧭 Deployment Notes
+
+To build and deploy:
+
+```bash
+ng build
+```
+
+Output will be in the `dist/` directory.
+
+---
+
+## 📄 License
+
+This project was created as part of an assignment for **Emplay**.
+Feel free to reuse or extend it for learning or demonstration purposes.
+
+```
+
+---
+
+Let me know if you want to add badges, GitHub Pages deployment steps, or contribution guidelines too.
+```
